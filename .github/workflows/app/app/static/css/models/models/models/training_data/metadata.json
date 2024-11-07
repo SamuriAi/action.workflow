@@ -1,0 +1,7 @@
+{
+    "categories": ["anime", "cartoon", "realistic"],
+    "labels": {
+        "image1.jpg": ["anime", "action"],
+        "image2.jpg": ["cartoon", "comedy"]
+    }
+}
