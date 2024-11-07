@@ -1,0 +1,16 @@
+data/
+└── training_data/
+    ├── images/
+    │   ├── image1.jpg
+    │   ├── image2.jpg
+    │   └── ...
+    ├── texts/
+    │   ├── text1.txt
+    │   ├── text2.txt
+    │   └── ...
+    ├── paired_data.csv
+    └── metadata.json
+image_path,text_description
+images/image1.jpg,This is a description of image 1.
+images/image2.jpg,This is a description of image 2.
+...
