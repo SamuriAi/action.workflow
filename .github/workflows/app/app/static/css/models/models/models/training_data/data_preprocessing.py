@@ -55,3 +55,30 @@ if __name__ == "__main__":
     preprocessed_texts = load_and_preprocess_texts(text_dir)
     preprocessed_texts.to_csv("data/processed_texts.csv", index=False)
     print("Preprocessing complete.")
+data_preprocessing.py
+Image Preprocessing:
+
+Loads images from a directory.
+
+Resizes them (example preprocessing step).
+
+Saves the processed images to an output directory.
+
+Text Preprocessing:
+
+Loads text files from a directory.
+
+Lowercases the text (example preprocessing step).
+
+Creates a DataFrame with the preprocessed texts and saves it as a CSV file.
+
+model_training.py
+Model Training:
+
+Uses a pre-trained image-to-text model from HuggingFace.
+
+Loads and preprocesses the dataset.
+
+Defines training arguments and initializes a Trainer object.
+
+Trains the model and saves it.
