@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamuraiAi Image Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>SamuraiAi Image Generator</h1>
+        <p>Transforming images into immersive storytelling experiences.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Upload Your Image</h2>
+            <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                <label for="imageUpload">Choose an image:</label>
+                <input type="file" id="imageUpload" name="file" accept="image/*" required>
+                <button type="submit">Generate Story</button>
+            </form>
+        </section>
+        <section id="results">
+            <!-- Results will be displayed here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SamuraiAi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
